@@ -14,14 +14,14 @@
     --h1-411: 3rem;
     --h1-768: 5rem;
     --h1-1024: 5rem;
-    --h1-1600: 6rem;
+    --h1-1600: 4.5rem;
     --p-320: 1rem;
     --p-360: 1.1rem;
     --p-375-812: 1.2rem;
     --p-411: 1.3rem;
     --p-768: 1.9rem;
     --p-1280: 1.1rem;
-    --p-1600: 1.7rem;
+    --p-1600: 1.4rem;
 }
 
 .clearfix::after {
@@ -1049,7 +1049,7 @@ header .scroll {
     }
 
     .subscribe p {
-        font-size: var(--p-1280);
+        font-size: var(--p-1600);
         line-height: 3rem;
     }
 }
