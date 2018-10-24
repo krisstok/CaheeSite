@@ -8,13 +8,13 @@
 
 :root {
     /* font-sizes */
-    --h1-320: 2.5rem;
-    --h1-360: 2.8rem;
-    --h1-375: 2.9rem;
-    --h1-411: 3rem;
-    --h1-768: 4.5rem;
-    --h1-1024: 4rem;
-    --h1-1600: 4.3rem;
+    --h2-320: 2.5rem;
+    --h2-360: 2.8rem;
+    --h2-375: 2.9rem;
+    --h2-411: 3rem;
+    --h2-768: 4.5rem;
+    --h2-1024: 4rem;
+    --h2-1600: 4.3rem;
     --p-320: 1rem;
     --p-360: 1.1rem;
     --p-375-812: 1.2rem;
@@ -73,7 +73,7 @@ button {
 
 header {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f9f8fd;
     text-align: center;
     background-image: url('img/header_bg.jpg');
@@ -155,7 +155,7 @@ header .header-description {
 
 header h1 {
     font-weight: 900;
-    font-size: var(--h1-320);
+    font-size: var(--h2-320);
     padding: 0 15vw;
     text-align: left;
 }
@@ -182,7 +182,7 @@ header .scroll {
 
 @media (min-width: 360px) {
     header h1 {
-        font-size: var(--h1-360);
+        font-size: var(--h2-360);
     }
 
     header h1+p {
@@ -193,7 +193,7 @@ header .scroll {
 
 @media (min-width: 375px) {
     header h1 {
-        font-size: var(--h1-375);
+        font-size: var(--h2-375);
     }
 }
 
@@ -212,7 +212,7 @@ header .scroll {
     }
 
     header h1 {
-        font-size: var(--h1-411);
+        font-size: var(--h2-411);
     }
 
     header h1+p {
@@ -229,7 +229,7 @@ header .scroll {
     }
 
     header h1 {
-        font-size: var(--h1-768);
+        font-size: var(--h2-768);
     }
 
     header h1+p {
@@ -252,7 +252,7 @@ header .scroll {
     }
 
     header h1 {
-        font-size: var(--h1-1024);
+        font-size: var(--h2-1024);
         padding: 0 15vw;
     }
 }
@@ -345,7 +345,7 @@ header .scroll {
     }
 
     header h1 {
-        font-size: var(--h1-1600);
+        font-size: var(--h2-1600);
     }
 
     header h1+p {
@@ -396,20 +396,20 @@ header .scroll {
 
 .about {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #00bcbc;
     overflow: hidden;
 }
 
-.about h1,
+.about h2,
 .about p {
     color: #fff;
     text-align: center;
 }
 
-.about h1 {
+.about h2 {
     padding-top: 10vh;
-    font-size: var(--h1-320);
+    font-size: var(--h2-320);
 }
 
 .about p {
@@ -426,8 +426,8 @@ header .scroll {
 }
 
 @media (min-width: 360px) {
-    .about h1 {
-        font-size: var(--h1-360);
+    .about h2 {
+        font-size: var(--h2-360);
     }
 
     .about p {
@@ -441,8 +441,8 @@ header .scroll {
 }
 
 @media (min-width: 375px) {
-    .about h1 {
-        font-size: var(--h1-375);
+    .about h2 {
+        font-size: var(--h2-375);
     }
 }
 
@@ -458,8 +458,8 @@ header .scroll {
 }
 
 @media (min-width: 411px) {
-    .about h1 {
-        font-size: var(--h1-411);
+    .about h2 {
+        font-size: var(--h2-411);
     }
 
     .about p {
@@ -469,8 +469,8 @@ header .scroll {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .about h1 {
-        font-size: var(--h1-768);
+    .about h2 {
+        font-size: var(--h2-768);
     }
 
     .about p {
@@ -504,14 +504,14 @@ header .scroll {
         width: 50vw;
     }
 
-    .about h1,
+    .about h2,
     .about p {
         text-align: left;
         padding-left: 30px;
     }
 
-    .about h1 {
-        font-size: var(--h1-1024);
+    .about h2 {
+        font-size: var(--h2-1024);
         padding-top: 0;
     }
 }
@@ -529,8 +529,8 @@ header .scroll {
 }
 
 @media (min-width: 1600px) {
-    .about h1 {
-        font-size: var(--h1-1600);
+    .about h2 {
+        font-size: var(--h2-1600);
     }
 
     .about p {
@@ -544,14 +544,14 @@ header .scroll {
 
 .services {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #70bfff;
     overflow: hidden;
 }
 
 .services .wrap {
     height: 50vh;
-    margin-top: 2vh;
+    padding-top: 10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -586,14 +586,14 @@ header .scroll {
     border-left: 0.2px solid #b2b2b2;
 }
 
-.services h1 {
+.services h2 {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: var(--h1-320);
+    font-size: var(--h2-320);
     text-align: center;
     z-index: 1;
 }
@@ -621,8 +621,8 @@ header .scroll {
         overflow: visible;
     }
 
-    .services h1 {
-        font-size: var(--h1-360);
+    .services h2 {
+        font-size: var(--h2-360);
     }
 
     .services img.tomato {
@@ -631,8 +631,8 @@ header .scroll {
 }
 
 @media (min-width: 375px) {
-    .services h1 {
-        font-size: var(--h1-375);
+    .services h2 {
+        font-size: var(--h2-375);
     }
 }
 
@@ -651,8 +651,8 @@ header .scroll {
         font-size: 1.4rem;
     }
 
-    .services h1 {
-        font-size: var(--h1-411);
+    .services h2 {
+        font-size: var(--h2-411);
     }
 
     .services img.tomato {
@@ -670,8 +670,8 @@ header .scroll {
         padding: 10px;
     }
 
-    .services h1 {
-        font-size: var(--h1-768);
+    .services h2 {
+        font-size: var(--h2-768);
     }
 
     .services img.tomato {
@@ -692,7 +692,7 @@ header .scroll {
         flex-basis: 50%;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         margin-top: 0;
     }
 
@@ -704,16 +704,16 @@ header .scroll {
     .services .wrap2 {
         position: relative;
         flex-basis: 50%;
-        height: 100vh;
+        min-height: 100vh;
     }
 
-    .services h1 {
-        font-size: var(--h1-1024);
+    .services h2 {
+        font-size: var(--h2-1024);
         width: 100%;
         text-align: center;
     }
 
-    .services h1,
+    .services h2,
     .services img.tomato {
         top: 50%;
         left: 50%;
@@ -732,8 +732,8 @@ header .scroll {
 }
 
 @media (min-width: 1600px) {
-    .services h1 {
-        font-size: var(--h1-1600);
+    .services h2 {
+        font-size: var(--h2-1600);
     }
 
     .services .info p {
@@ -753,14 +753,14 @@ header .scroll {
     overflow-x: hidden;
 }
 
-.gallery h1 {
+.gallery h2 {
     padding-top: 10vh;
-    font-size: var(--h1-320);
+    font-size: var(--h2-320);
     text-align: center;
 }
 
 .gallery p {
-    padding: 20px 10vw;
+    padding: 20px 20vw;
     text-align: center;
     line-height: 1.7rem;
 }
@@ -782,8 +782,8 @@ header .scroll {
 }
 
 @media (min-width: 360px) {
-    .gallery h1 {
-        font-size: var(--h1-360);
+    .gallery h2 {
+        font-size: var(--h2-360);
     }
 
     .gallery p {
@@ -793,8 +793,8 @@ header .scroll {
 }
 
 @media (min-width: 375px) {
-    .gallery h1 {
-        font-size: var(--h1-375);
+    .gallery h2 {
+        font-size: var(--h2-375);
     }
 }
 
@@ -806,8 +806,8 @@ header .scroll {
 }
 
 @media (min-width: 411px) {
-    .gallery h1 {
-        font-size: var(--h1-411);
+    .gallery h2 {
+        font-size: var(--h2-411);
     }
 
     .gallery p {
@@ -817,8 +817,8 @@ header .scroll {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .gallery h1 {
-        font-size: var(--h1-768);
+    .gallery h2 {
+        font-size: var(--h2-768);
     }
 
     .gallery p {
@@ -832,8 +832,8 @@ header .scroll {
 }
 
 @media (min-width: 1024px) {
-    .gallery h1 {
-        font-size: var(--h1-1024);
+    .gallery h2 {
+        font-size: var(--h2-1024);
     }
 
     .galleryImages {
@@ -874,8 +874,8 @@ header .scroll {
 }
 
 @media (min-width: 1600px) {
-    .gallery h1 {
-        font-size: var(--h1-1600);
+    .gallery h2 {
+        font-size: var(--h2-1600);
     }
 
     .gallery p {
@@ -892,10 +892,10 @@ header .scroll {
     background-position: 55%;
 }
 
-.subscribe h1 {
+.subscribe h2 {
     padding: 30px 10px 0;
     text-align: center;
-    font-size: var(--h1-320);
+    font-size: var(--h2-320);
 }
 
 .subscribe p {
@@ -926,8 +926,8 @@ header .scroll {
 }
 
 @media (min-width: 360px) {
-    .subscribe h1 {
-        font-size: var(--h1-360);
+    .subscribe h2 {
+        font-size: var(--h2-360);
     }
 
     .subscribe p {
@@ -937,8 +937,8 @@ header .scroll {
 }
 
 @media(min-width: 375px) {
-    .subscribe h1 {
-        font-size: var(--h1-375);
+    .subscribe h2 {
+        font-size: var(--h2-375);
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -964,8 +964,8 @@ header .scroll {
         height: 65vh;
     }
 
-    .subscribe h1 {
-        font-size: var(--h1-411);
+    .subscribe h2 {
+        font-size: var(--h2-411);
     }
 
     .subscribe p {
@@ -979,8 +979,8 @@ header .scroll {
         height: 80vh;
     }
 
-    .subscribe h1 {
-        font-size: var(--h1-768);
+    .subscribe h2 {
+        font-size: var(--h2-768);
     }
 
     .subscribe p {
@@ -1001,7 +1001,7 @@ header .scroll {
         margin-left: 10vw;
     }
 
-    .subscribe h1 {
+    .subscribe h2 {
         margin-top: 5vh;
         padding-top: 5vh;
         padding-left: 0;
@@ -1046,7 +1046,7 @@ header .scroll {
 }
 
 @media (min-width: 1600px) {
-    .subscribe h1 {
+    .subscribe h2 {
         font-size: 3.9rem;
     }
 
@@ -1065,10 +1065,10 @@ header .scroll {
     align-items: center;
 }
 
-.blog h1 {
+.blog h2 {
     padding: 10vh 0 0;
     text-align: center;
-    font-size: var(--h1-320);
+    font-size: var(--h2-320);
     color: #fff;
 }
 
@@ -1090,15 +1090,15 @@ header .scroll {
     box-shadow: 0px 5px 10px -2px #000000bf;
 }
 
-.blog .post h1,
-.blog .post h2,
-.blog .post h3 {
+.blog .post h3,
+.blog .post h4,
+.blog .post h5 {
     position: absolute;
     color: #fff;
     padding: 0 30px;
 }
 
-.blog .post h1 {
+.blog .post h3 {
     top: 8%;
     left: 8%;
     width: 60px;
@@ -1115,13 +1115,13 @@ header .scroll {
     color: #fff;
 }
 
-.blog .post h2 {
+.blog .post h4 {
     bottom: 15%;
     left: 0;
     font-size: 1.2rem;
 }
 
-.blog .post h3 {
+.blog .post h5 {
     bottom: 5%;
     left: 0;
     font-size: 1rem;
@@ -1134,8 +1134,8 @@ header .scroll {
 }
 
 @media (min-width: 360px) {
-    .blog h1 {
-        font-size: var(--h1-360);
+    .blog h2 {
+        font-size: var(--h2-360);
     }
 
     .blog p {
@@ -1145,8 +1145,8 @@ header .scroll {
 }
 
 @media(min-width: 375px) {
-    .blog h1 {
-        font-size: var(--h1-375);
+    .blog h2 {
+        font-size: var(--h2-375);
     }
 }
 
@@ -1158,8 +1158,8 @@ header .scroll {
 }
 
 @media (min-width: 411px) {
-    .blog h1 {
-        font-size: var(--h1-411);
+    .blog h2 {
+        font-size: var(--h2-411);
     }
 
     .blog p {
@@ -1173,8 +1173,8 @@ header .scroll {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .blog h1 {
-        font-size: var(--h1-768);
+    .blog h2 {
+        font-size: var(--h2-768);
     }
 
     .blog p {
@@ -1187,9 +1187,9 @@ header .scroll {
         margin: 15px 0;
     }
 
-    .blog .post h1,
-    .blog .post h2,
-    .blog .post h3 {
+    .blog .post h3,
+    .blog .post h4,
+    .blog .post h5 {
         font-size: 2rem;
     }
 
@@ -1197,7 +1197,7 @@ header .scroll {
         font-size: 2rem;
     }
 
-    .blog .post h1 {
+    .blog .post h3 {
         width: 90px;
         height: 90px;
         font-size: 2.2rem;
@@ -1205,8 +1205,8 @@ header .scroll {
 }
 
 @media (min-width: 1024px) {
-    .blog h1 {
-        font-size: var(--h1-1024);
+    .blog h2 {
+        font-size: var(--h2-1024);
     }
 
     .blog p {
@@ -1240,8 +1240,8 @@ header .scroll {
 }
 
 @media (min-width: 1600px) {
-    .blog h1 {
-        font-size: var(--h1-1600);
+    .blog h2 {
+        font-size: var(--h2-1600);
     }
 
     .blog p {
@@ -1257,11 +1257,12 @@ header .scroll {
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
+    padding-bottom: 10vh;
     overflow: hidden;
 }
 
-.contact h1 {
-    font-size: var(--h1-320);
+.contact h2 {
+    font-size: var(--h2-320);
     padding-top: 10vh;
 }
 
@@ -1280,6 +1281,7 @@ header .scroll {
     display: flex;
     flex-direction: column;
     width: 90%;
+    padding-bottom: 15px;
 }
 
 .contact input,
@@ -1301,14 +1303,11 @@ header .scroll {
 }
 
 .contact input[type=text],
-.contact textarea {
+.contact textarea[type=text] {
     color: #fff;
     padding-left: 25px;
+    line-height: 50px;
     font-size: 1.2rem;
-}
-
-.contact textarea::placeholder {
-    padding-top: calc((50px - 1.1rem) / 2);
 }
 
 .contact input:focus,
@@ -1328,8 +1327,8 @@ header .scroll {
 }
 
 @media (min-width: 360px) {
-    .contact h1 {
-        font-size: var(--h1-360);
+    .contact h2 {
+        font-size: var(--h2-360);
     }
 
     .contact p {
@@ -1339,8 +1338,8 @@ header .scroll {
 }
 
 @media (min-width: 375px) {
-    .contact h1 {
-        font-size: var(--h1-375);
+    .contact h2 {
+        font-size: var(--h2-375);
     }
 }
 
@@ -1352,8 +1351,8 @@ header .scroll {
 }
 
 @media (min-width: 411px) {
-    .contact h1 {
-        font-size: var(--h1-411);
+    .contact h2 {
+        font-size: var(--h2-411);
     }
 
     .contact p {
@@ -1367,8 +1366,8 @@ header .scroll {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .contact h1 {
-        font-size: var(--h1-768);
+    .contact h2 {
+        font-size: var(--h2-768);
     }
 
     .contact p {
@@ -1401,11 +1400,11 @@ header .scroll {
 
 @media (min-width: 1024px) {
     .contact {
-        height: 100vh;
+        min-height: 100vh;
     }
 
-    .contact h1 {
-        font-size: var(--h1-1024);
+    .contact h2 {
+        font-size: var(--h2-1024);
     }
 
     .contact .wrap-form,
@@ -1455,8 +1454,8 @@ header .scroll {
 }
 
 @media (min-width: 1600px) {
-    .contact h1 {
-        font-size: var(--h1-1600);
+    .contact h2 {
+        font-size: var(--h2-1600);
     }
 
     .contact p {
