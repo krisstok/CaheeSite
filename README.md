@@ -1,5 +1,5 @@
 # CaheeSite
 
-My first project from PSD
+Project from PSD, techstack [HTML, CSS, JS]
 
 https://krisstok.github.io/CaheeSite/
